@@ -34,8 +34,6 @@ Grading rewards rigorous methodology, not high returns. An agent that fails on t
 
 ## 1. Problem Formulation
 
-> *"Most failures happen before a single line of code is written. The framing decides the outcome."* — Dr. Volkov
-
 ### State Space
 
 The agent's observation at each timestep is its state. Define it carefully: what information is available at time `t`, and what form does it take?
@@ -100,8 +98,6 @@ def _reward(self, prev, curr)           # scalar reward signal
 
 ## 4. Reward Design
 
-> *"Tell me your reward function and I will tell you what your agent will become."* — Dr. Volkov
-
 Document the full iteration. State each reward formulation, train, and report observed behavior. Did the agent park in cash? Trade excessively? For the final formulation, compare at least two alternatives: log return, differential Sharpe, drawdown-penalized, turnover-penalized. Identify one plausible exploit of your reward and report whether the agent discovered it.
 
 ## 5. Algorithm
@@ -109,8 +105,6 @@ Document the full iteration. State each reward formulation, train, and report ob
 DQN with a discrete action space is the standard starting point. Reasonable extensions: Double DQN, Dueling DQN, Prioritized Experience Replay. Policy gradient methods (PPO, SAC) are permitted if justified by the problem formulation. Report all hyperparameters. Any tuning on the held-out evaluation window is grounds for disqualification.
 
 ## 6. Baselines
-
-> *"An agent that beats nothing has beaten nothing."* — Dr. Volkov
 
 All baselines are implemented in `src/baselines.py` and must be evaluated under identical conditions to your agent.
 
